@@ -7,5 +7,9 @@ module AliExpress
       @number = params[:number]
       @type = params[:type] || 'auto'
     end
+
+    def excute
+      RestClient.post AliExpress.Configuration.query_url, { number: @number, type: @type }
+    end
   end
 end

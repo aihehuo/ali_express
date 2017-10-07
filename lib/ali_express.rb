@@ -12,3 +12,4 @@ module AliExpress
 end
 
 require_relative 'ali_express/configuration'
+require_relative 'ali_express/request'
