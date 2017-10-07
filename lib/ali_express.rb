@@ -1,4 +1,5 @@
 require "ali_express/version"
+require "rest-client"
 
 module AliExpress
   class << self

@@ -9,7 +9,11 @@ module AliExpress
     end
 
     def excute
-      RestClient.post AliExpress.configuration.query_url, { number: @number, type: @type }
+      @response ||= RestClient::Request.execute(
+        method: :get,
+        url: AliExpress.configuration.query_url,
+        headers: { params: {number: @number, type: @type}, Authorization: "APPCODE #{AliExpress.configuration.app_code}" }
+      )
     end
   end
 end
