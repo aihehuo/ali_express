@@ -15,5 +15,14 @@ module AliExpress
         headers: { params: {number: @number, type: @type}, Authorization: "APPCODE #{AliExpress.configuration.app_code}" }
       )
     end
+
+    def get_result
+      excute
+      if @response.code == 200
+        JSON.parse(@response.body)
+      else
+        { "status": @response.code }
+      end
+    end
   end
 end
