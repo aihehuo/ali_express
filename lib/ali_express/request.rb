@@ -18,11 +18,7 @@ module AliExpress
 
     def get_result
       excute
-      if @response.code == 200
-        JSON.parse(@response.body)
-      else
-        { "status": @response.code }
-      end
+      JSON.parse(@response.body)
     end
   end
 end
