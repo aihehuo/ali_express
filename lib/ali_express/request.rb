@@ -9,7 +9,7 @@ module AliExpress
     end
 
     def excute
-      RestClient.post AliExpress.Configuration.query_url, { number: @number, type: @type }
+      RestClient.post AliExpress.configuration.query_url, { number: @number, type: @type }
     end
   end
 end

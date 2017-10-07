@@ -1,4 +1,4 @@
-module ZhimaAuth
+module AliExpress
   class Configuration
     attr_accessor :app_code, :query_url
 

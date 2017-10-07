@@ -5,7 +5,14 @@ RSpec.describe AliExpress do
     expect(AliExpress::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has app_code Configuration" do
+    AliExpress.configure do |config|
+      config.app_code = '123456'
+    end
+    expect(AliExpress.configuration.app_code).to eq('123456')
+  end
+
+  it 'has default query_url Configuration' do
+    expect(AliExpress.configuration.query_url).to eq('http://jisukdcx.market.alicloudapi.com/express/query')
   end
 end
