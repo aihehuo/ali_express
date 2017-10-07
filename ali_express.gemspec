@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Simple ali express api wrapper.}
   spec.description   = %q{Get tons of express information easily from ali express service.}
-  spec.homepage      = "http://www.liangboyuan.pub"
+  spec.homepage      = "https://github.com/aihehuo/ali_express"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
