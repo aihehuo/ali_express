@@ -30,7 +30,7 @@ end
 # type is optional here
 AliExpress::ExpressQuery.new({ number: 'YOUR DELIVER NUMBER', type: 'COMPANY TYPE CODE' }).get_result
 ```
-更多信息请参考 [官方文档]('https://market.aliyun.com/products/57126001/cmapi011120.html?spm=5176.2020520132.101.45.4xKLql#sku=yuncode512000008')
+更多信息请参考 [官方文档](https://market.aliyun.com/products/57126001/cmapi011120.html?spm=5176.2020520132.101.45.4xKLql#sku=yuncode512000008)
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
